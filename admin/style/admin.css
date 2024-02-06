@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+/* Navigation Bar */
+#navBarDiv {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px; */
+    margin: 10px 10px 0px 10px;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+#vespLogo {
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+.auto-type {
+    font-size: 4vh;
+    color: #6d4c41;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* #userDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+            margin: auto;
+} */
+
+#welcome {
+    margin: auto;
+    font-size: 2vh;
+    /* color: #6d4c41; */
+}
+
+#logoutBtn {
+    /* background-color: #FF004D; */
+    /* background-color: #FE0000;
+    border: 1px solid #FE0000; */
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    color: #6d4c41;
+    width: 25vh;
+    height: 6vh;
+    border-radius: 30px;
+    transition: 0.5s, 0.5s;
+    font-size: 2.5vh;
+    margin: auto;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+#logoutBtn:hover {
+    /* background-color: rgba(0, 150, 0, 0.7); */
+    /* background-color: #D71313; */
+    background-color: #ffce3c;
+    color: #6d4c41;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+/* Complete Page */
+#homePage {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+/* Left Panel */
+#navPanel {
+    width: 25vw;
+    border-right: 1px solid black;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.allBtns {
+    display: block;
+    width: 98%;
+    height: 5vh;
+    border: none;
+    background-color: #feefcd;
+    transition: 0.5s;
+    border: 1px solid #ffdf96;
+    font-size: 2.1vh;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.allBtns:hover, .branchBtn:hover {
+    background-color: #ffdf96;
+}
+
+.allSem {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+#fy, #mgtBtn, #eteBtn {
+    border-radius: 10px 10px 0px 0px;
+}
+
+#ty, #estBtn, #etmBtn {
+    border-radius: 0px 0px 10px 10px;
+}
+
+#bscBtn, #aseBtn, #memBtn, #ajpBtn {
+    border-radius: 10px;
+}
+
+.divider {
+    border: 1px solid #ffc107;
+    margin: 0px auto;
+    width: 200px;
+}
+
+#topDivider {
+    margin-top: 10px;
+}
+
+#uploadQuest, #marks, #studentDetails {
+    text-align: center;
+    margin: 5px;
+} 
+
+/* Right Panel */
+#noAct {
+    margin: auto;
+}
+
+#noActTxt {
+    color: gray;
+}
+
+/* After clicking student list button */
+#branch {
+    display: none;
+    /* margin: 10px auto; */
+    /* width: 100%; */
+}
+
+.branchBtn {
+    /* width: 11.7vw; */
+    /* width: 500%; */
+    width: 150px;
+    height: 5vh;
+    border: none;
+    background-color: #feefcd;
+    transition: 0.5s;
+    /* border: 1px solid #ffdf96; */
+    font-size: 2.5vh;
+    text-align: center;
+    /* padding-left: 10px; */
+}
+
+#aoBtn {
+    border-radius: 50px 0 0 50px;
+}
+
+#meBtn {
+    border-radius: 0 50px 50px 0;
+}
+
+/* Complete Student List */
+#studDetails {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#studCap {
+    margin: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#studDetails table {
+    /* width: 100%; */
+    border-collapse: collapse;
+    margin: 10px 10px 10px 0;
+}
+
+#studDetails th, #studDetails td {
+    border: 1px solid #ddd;
+    /* padding: 8px; */
+    text-align: center;
+    /* height: 40px; */
+    height: 6vh;
+}
+
+#studDetails th {
+    background-color: #f2f2f2;
+    
+}
+
+/* Add width styles for each column */
+#studDetails td:nth-child(1), #studDetails th:nth-child(1) {
+    width: 10vw;
+}
+
+#studDetails td:nth-child(2), #studDetails th:nth-child(2) {
+    width: 10vw;
+}
+
+#studDetails td:nth-child(3), #studDetails th:nth-child(3) {
+    width: 30vw;
+}
+
+#studDetails td:nth-child(4), #studDetails th:nth-child(4) {
+    width: 10vw;
+}
+
+#studDetails td:nth-child(5), #studDetails th:nth-child(5) {
+    width: 10vw;
+}
+
+/* #studRoll {
+    width: 10vw;
+}
+
+#studEnroll {
+    width: 10vw;
+}
+
+#studName {
+    width: 30vw;
+}
+
+#studStatus {
+    width: 10vw;
+}
+
+#studReset {
+    width: 10vw;
+} */
+
+#studDetails select, #resetBtn {
+    width: 90%;
+    height: 25px;
+    background-color: #feefcd;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#resetBtn:hover {
+    border: 2px solid #D80032;
+    background-color: #D80032;
+    color: white;
+}

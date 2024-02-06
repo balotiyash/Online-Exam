@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VES Polytechnic - Exams</title>
+    <link rel="shortcut icon" type="image/x-icon" href="asset/images/VES-logo.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!--Bootstrap-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!--For Fonts-->
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="media.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header id="headerContainer">
+        <div id="navBarDiv">
+            <img src="asset/images/VESP Logo1.png" alt="VES Polytechnic" id="vespLogo">
+            <div id="loginBtns">
+                <input type="button" value="Student Login" id="studBtn">
+                <input type="button" value="Admin Login" id="adminBtn">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="mainSec">
+            <!-- Welcome Message with VES Logo -->
+            <div id="mainDiv">
+                <img src="asset/images/VES-logo.png" alt="VES" id="vesLogo">
+                <h1 id="intro">Welcome to VES Polytechnic's</h1>
+                <p id="msg">Online Examination Portal</p>
+            </div>
+            
+            <!-- Vission Mission Container -->
+            <div class="vision-container">
+                <div class="vision">
+                    <p><b>Vision</b></p>
+                    <ul>
+                        <li>To be centre of excellence in the field of technical education.</li>
+                    </ul>
+    
+                    <p><b>Quality Policy</b></p>
+                    <ul>
+                        <li>VES Polytechnic is committed to impart quality education in a disciplined environment with the help of competent dedicated faculty.We continuously strive to improve the teaching learning process to achieve academic excellence.</li>
+                    </ul>
+                </div>
+    
+                <div class="vision">
+                    <p><b>Mission</b></p>
+                    <ul id="mission">
+                        <li>Enable the student to excel in their academic pursuits,making them sensitive to the needs of progressive industrial world.</li>
+                        <li>To produce technocrats with psychomotor and cognitive skills, committed to lifelong learning.</li>
+                        <li>To impart ethical values and leadership qualities in students which would transform them into superior human beings.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="popup">
+                <!-- Student Login Button Popup -->
+                <div class="close-btn">&times;</div>
+                <div class="form" id="studDiv">
+                    <h2 id="loginName">Student Login</h2>
+                    <div class="form-element">
+                        <label for="enroll" id="enrollLbl">Enrollment Number</label>
+                        <input type="text" id="enroll" placeholder="Enter Enrollment No." autocomplete="off">
+                    </div>
+                    <div class="form-element" id="studNameDiv">
+                        <label for="studNameTxt">Student Name</label>
+                        <input type="text" placeholder="Student Name" id="studNameTxt" disabled>
+                    </div>
+                    <div class="form-element">
+                        <label for="testCode" id="testCodeLbl">Test Code</label>
+                        <input type="password" id="testCode" placeholder="Enter Test Code" autocomplete="off" disabled>
+                    </div>
+                    <!-- <div>
+                        <input type="checkbox" id="practice" onclick="practiceMode()">
+                        <label for="practice" onclick="practiceMode()">Login as practice mode.</label>
+                    </div> -->
+                    <div class="form-element">
+                        <!-- <button onclick="openDashboard('student')" id="loginBtn">Verify</button> -->
+                        <button id="loginBtn">Fetch Student Name</button>
+                    </div>
+                </div>
+
+                <!-- Staff Login Button Popup -->
+                <div class="form" id="staffDiv" hidden>
+                    <h2 id="loginName">Staff Login</h2>
+                    <div class="form-element">
+                        <label for="uname" id="unameLbl">Username</label>
+                        <input type="text" id="uname" placeholder="Enter Username" autocomplete="off">
+                    </div>
+                    <div class="form-element" id="studNameDiv">
+                        <label for="passTxt">Password</label>
+                        <input type="password" placeholder="Enter Password" id="passTxt">
+                    </div>
+                    <div class="form-element">
+                        <button id="staffLoginBtn">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Warning message footer -->
+    <footer>
+        <div id="warning">
+            <marquee behavior="" direction="">Note: Every action is been recorded, so be careful while performing any action.</marquee>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="environment/config.js"></script>
+    <script src="main.js"></script>
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>

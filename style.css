@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto'; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    VES Brown color: #6d4c41;
+    VES Dark Yellow color: #ffc107;
+    VES Light Yellow color: #feefcd;
+*/
+
+/* Navigation Bar */
+#navBarDiv {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+#vespLogo {
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+.btn {
+    height: 6vh;
+    width: 200px;
+}
+
+#studBtn {
+    background-color: #A1DD70;
+    border: 1px solid #A1DD70;
+    color: black;
+    /* width: 12vw; */
+    width: 12vw;
+    height: 6vh;
+    border-radius: 20px;
+    transition: 0.5s, 0.5s;
+    font-size: 2.5vh;
+}
+
+#studBtn:hover {
+    background-color: rgba(0, 150, 0, 0.7);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+#adminBtn {
+    background-color: #B4D4FF;
+    border: 1px solid #AEDEFC;
+    color: black;
+    width: 12vw;
+    height: 6vh;
+    border-radius: 20px;
+    transition: 0.5s, 0.5s;
+    margin-left: 15px;
+    font-size: 2.5vh;
+}
+
+#adminBtn:hover {
+    background-color: #0766AD;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+/* Welcome message with Logo */
+#vesLogo {
+    display: block;
+    height: 15vh;
+    margin: auto;
+}
+
+#intro {
+    text-align: center;
+    color: #6d4c41;
+    font-size: 6vh;
+    margin: 5px;
+}
+
+#msg {
+    text-align: center;
+    /* font-size: 20px; */
+    font-size: 3vh;
+    color: gray;
+}
+
+/* vision mission */
+.vision-container {
+    display: flex;
+    gap: 20px;
+    font-size: 2.5vh;
+}
+
+.vision {
+    background-color: #feefcd;
+    width: 40vw;
+    /* height: 40vh; */
+    padding: 15px;
+    /* margin: 2vw 5vw 5vw 5vw; */
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 1vw;
+    margin-bottom: 5.9vw;
+    /* border: #ffc107 solid 4px; */
+    border: #ffc107 solid 0.5vh;
+    /* border-radius: 20px; */
+    border-radius: 3vh;
+    line-height: 3.5vh;
+}
+
+/* warning footer */
+#warning {
+    position: fixed;
+    background-color: #6d4c41;
+    color: #feefcd;
+    width: 100vw;
+    bottom: 0;
+    font-size: 2.3vh;
+}

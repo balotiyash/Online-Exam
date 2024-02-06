@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VES Polytechnic - Exams</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../asset/images/VES-logo.png" />
+    <link rel="stylesheet" href="../style/dashboard.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<!-- <body onload="window.onload = function() { window.history.forward(); }"> -->
+<body>
+    <!-- Navigation Bar -->
+    <header id="navHead">
+        <div id="navBarDiv">
+            <img src="../../asset/images/VESP Logo1.png" alt="VES Polytechnic" id="vespLogo">
+            <p><span class="auto-type"></span></p>
+            <div id="userDiv">
+                <p id="welcome">Welcome<p id="studentName"></p></p>
+                <input type="button" value="Logout" id="logoutBtn">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Complete Main Page (Left + Right) -->
+        <section id="homePage">
+            
+            <!-- Left Panel -->
+            <div id="navPanel">
+                <div id="commonDiv" class="allSem">
+                    <p>Common Subjects</p>
+                    <input type="button" class="subjectBtn" value="Management" id="mgtBtn">
+                    <input type="button" class="subjectBtn" value="Environmental Studies" id="estBtn">
+                </div>
+                <div id="first" class="allSem">
+                    <p>First Semester</p>
+                    <input type="button" class="subjectBtn" value="Basic Science" id="bscBtn">
+                    <!-- <input type="button" value="Fundamentals of ICT"> -->
+                </div>
+                <div id="second" class="allSem">
+                    <p>Second Semester</p>
+                    <input type="button" class="subjectBtn" value="Applied Science" id="aseBtn">
+                    <!-- <input type="button" value="Business Communication using Computer"> -->
+                </div>
+                <div id="third" class="allSem">
+                    <p>Third Semester</p>
+                    <input type="button" class="subjectBtn" value="Mechanical Engineering Materials" id="memBtn">
+                </div>
+                <div id="fifth" class="allSem">
+                    <p>Fifth Semester</p>
+                    <input type="button" class="subjectBtn" value="Advanced Java Programming" id="ajpBtn">
+                    <!-- onclick="document.location.href = 'exam.html';">-->
+                </div>
+                <div id="sixth" class="allSem">
+                    <p>Sixth Semester</p>
+                    <input type="button" class="subjectBtn" value="Emerging Trends in Electronics" id="eteBtn">
+                    <input type="button" class="subjectBtn" value="Emerging Trends in Electrical Engineering">
+                    <input type="button" class="subjectBtn" value="Emerging Trends in Civil Engineering">
+                    <input type="button" class="subjectBtn" value="Emerging Trends in Computer and IT">
+                    <input type="button" class="subjectBtn" value="Emerging Trends in Mechanical Engineering" id="etmBtn">
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div id="mainPage">
+                <p id="noExam">No Exam Selected!!</p>
+
+                <!-- Subject Info -->
+                <div id="examDetails">
+                    <p id="subName">Advanced Java Programming</p>
+                    <div id="subInfo">
+                        <p>AJP - 22517</p>
+                        <p>CO5I/CM5I/CW5I</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="info">
+                        <p>Total Questions: 20</p>
+                        <p>Total Time: 30 Mins.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="rules">
+                        <p id="ruleTag">Rules</p>
+                        <ul>
+                            <li>Any attempt to open new window or tab will lead to end your exam.</li>
+                            <li>Don't press the keyboard unnecessarily, it will automatically End your Exam.</li>
+                            <li>Use of Mobile phones, Smart watches, E-Series Calculator is strictly prohibited.</li>
+                            <li>The timer will start from the moment a student clicks on the Start button.</li>
+                            <li>Attempt all questions and save and submit.</li>
+                            <li>Once you have attempted all the questions click on submit button and End exam.</li>
+                            <li>Remember to Logout of the portal after you have submitted the paper.</li>
+                            <li>The Examinee is solely responsible if he/ she presses the End Exam button.</li>
+                        </ul>
+                    </div>
+                    <div id="startDiv">
+                        <!-- <input type="button" value="Exam Not Scheduled Yet" id="startExam"> -->
+                        <!-- <input type="button" value="Start Exam" id="startExam" onclick="document.location.href = 'exam.html';"> -->
+                        <input type="button" value="Start Exam" id="startExam">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <footer>
+            <div id="warning">
+                <marquee behavior="" direction="">Note: Every action is been recorded, so be careful while performing any action.</marquee>
+            </div>
+        </footer>
+    </footer>
+
+    <!-- JavaScript -->
+    <script type="module" src="../controller/dashboard.js"></script>
+    <script src="../../environment/config.js"></script>
+
+    <!-- Script to dynamically type text -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["VES Polytechnic", "Automation and Robotics", "Civil Engineering", "Computer Engineering", "Electrical Engineering", "Electronics & Tele-Comm Eng.", "Mechanical Engineering"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+</html>

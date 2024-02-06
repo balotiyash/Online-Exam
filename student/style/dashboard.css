@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+/* Navigation Bar */
+#navBarDiv {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px; */
+    margin: 10px 10px 0px 10px;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+#vespLogo {
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+.auto-type {
+    font-size: 4vh;
+    color: #6d4c41;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#userDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: auto; */
+}
+
+#welcome {
+    margin: auto;
+    font-size: 2vh;
+    /* color: #6d4c41; */
+}
+
+#logoutBtn {
+    /* background-color: #FF004D; */
+    /* background-color: #FE0000;
+    border: 1px solid #FE0000; */
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    color: #6d4c41;
+    width: 25vh;
+    height: 6vh;
+    border-radius: 30px;
+    transition: 0.5s, 0.5s;
+    font-size: 2.5vh;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#logoutBtn:hover {
+    /* background-color: rgba(0, 150, 0, 0.7); */
+    /* background-color: #D71313; */
+    background-color: #ffce3c;
+    color: #6d4c41;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+/* Left Panel */
+#navPanel {
+    width: 25%;
+    /* height: 38vw; */
+    border-right: 1px solid black;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subjectBtn {
+    display: block;
+    width: 98%;
+    height: 5vh;
+    border: none;
+    background-color: #feefcd;
+    transition: 0.5s;
+    border: 1px solid #ffdf96;
+    font-size: 2.1vh;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.subjectBtn:hover {
+    background-color: #ffdf96;
+}
+
+#mgtBtn, #eteBtn {
+    border-radius: 10px 10px 0px 0px;
+}
+
+#estBtn, #etmBtn {
+    border-radius: 0px 0px 10px 10px;
+}
+
+#bscBtn, #aseBtn, #memBtn, #ajpBtn {
+    border-radius: 10px;
+}
+
+#etmBtn {
+    margin-bottom: 25px;
+}
+
+.allSem {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+/* Right Panel */
+#mainPage {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    color: gray;
+    font-size: 2vh;
+}
+
+#homePage {
+    display: flex;
+}
+
+#examDetails {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+    height: 425px;
+    border: 3px solid #ffc107;
+    border-radius: 3vh;
+    background-color: #feefcd;
+    color: #6d4c41;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-size: 3vh; */
+    padding: 25px;
+}
+
+#subName {
+    font-family: 'Times New Roman', Times, serif;
+    /* font-size: 4vh; */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#info, #subInfo {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-size: 2.7vh; */
+    font-size: 22px;
+}
+
+.divider {
+    border: 1px solid #ffc107;
+}
+
+#ruleTag {
+    /* font-size: 2.5vh; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#rules {
+    display: block;
+    text-align: left;
+    /* font-size: 2.2vh; */
+    font-size: 15px;
+    padding-left: 20px;
+    line-height: 3vh;
+    margin-bottom: 10px;
+}
+
+#startExam {
+    background-color: #ffc107;
+    color: #6d4c41;
+    width: 50%;
+    /* height: 6vh; */
+    height: 40px;
+    border: none;
+    border-radius: 3vh;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+/* Footer */
+#warning {
+    position: fixed;
+    background-color: #6d4c41;
+    color: #feefcd;
+    width: 100vw;
+    bottom: 0;
+    font-size: 2.3vh;
+}
+
+@media screen and (max-width: 600px) {
+    #navBarDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .auto-type {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    #userDiv {
+        display: none;
+    }
+
+    #navPanel {
+        width: 100%;
+        border: none;
+    }
+
+    #mainPage {
+        display: none;
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VES Polytechnic - Exams</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../asset/images/VES-logo.png" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!--For Fonts-->
+
+    <link rel="stylesheet" href="../style/exam.css">
+</head>
+<!-- onloading start 30min timer -->
+<body >
+    <!-- if opened in mobile devices -->
+    <header>
+        <div id="orientationMessage">
+            <p>Please rotate your device to landscape mode for a better viewing experience.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="mainContainer">
+            <!-- Student Profile: LiveCam, Name, RollNo -->
+            <div id="partOne">
+                <div id="profileDiv">
+                    <h3 id="head1">Student Profile</h3>
+                    <!-- <div id="profileImage"></div> -->
+                    <img src="../../asset/images/VES-logo.png" alt="VES" id="vesLogo">
+                    <p id="studName"><mark id="studentName"></mark></p>
+                    <!-- <p id="studName">YASH LAXMAN BALOTIYA</p> -->
+                    <p id="studId">CO5IA - 61</p>
+                </div>
+                <!-- <hr><hr> -->
+
+                <!-- Questions Tally must change dynamically -->
+                <div id="tallyDiv">
+                    <h3 id="head2">Question's Tally</h3>
+                    <div id="tally">
+                        <div id="attempted">Attempted: <span>0</span></div>
+                        <div id="pending">Pending: <span>20</span></div>
+                        <div id="review">Review: <span>0</span></div>
+                        <div id="total">Total: 20</div>
+                    </div>
+                    <!-- <input type="button" value="End Exam" id="endBtn" disabled> -->
+                </div>
+                <!-- <hr><hr> -->
+            
+                <!-- Submit Button -->
+                <div id="endBtnDiv">
+                    <input type="button" value="End Exam" id="endBtn">
+                </div>
+                <!-- <input type="button" value="End Exam" id="endBtn" disabled> -->
+                <!-- <br><br> -->
+            </div>
+
+            <!-- Main QA Page -->
+            <div id="partTwo">
+                <!-- Dynamically Fetching Questions and Answers -->
+                <div id="question">
+                    <!-- <p>1. How many ports of TCP/IP are reserved for specific protocols?</p> -->
+                    <!-- <pre>1. Choose the Correct Output
+                        importjava.awt.event.*;
+                        import java.awt.*;
+                        importjava.applet.*;
+                        public class checkbackg extends Applet implements ItemListener {
+                            Checkbox m1,m2,m3;public void init() {
+                                m1=new Checkbox("A");m2=new Checkbox("B");
+                                m3=new Checkbox("C");add(m1);add(m2);add(m3);
+                                m1.addItemListener(this);m2.addItemListener(this);
+                            }
+                            public void itemStateChanged(ItemEventie) {
+                                if(ie.getSource()==m1)
+                                setBackground(Color.red);
+                                if(ie.getSource()==m2)
+                                setBackground(Color.green);
+                            }
+                        }
+                        /*< applet code=checkbackg.class height=150 width=150>< /applet>*/
+                    </pre> -->
+                    <!-- <pre>1. Which of these exception is thrown by URL class's constructors?</pre> -->
+                    <pre id="saval"></pre>
+                </div>
+
+                <div id="ans">
+                    <input type="radio" name="answer" id="a">
+                    <label for="a" id="rad1"></label>
+                    <br>
+                    <input type="radio" name="answer" id="b">
+                    <label for="b" id="rad2"></label>
+                    <br>
+                    <input type="radio" name="answer" id="c">
+                    <label for="c" id="rad3"></label>
+                    <br>
+                    <input type="radio" name="answer" id="d">
+                    <label for="d" id="rad4"></label>
+                    <br>
+                    <!-- <input type="radio" name="answer" id="a"><img src="Resources/a.png">
+                    <input type="radio" name="answer" id="b"><img src="Resources/b.png">
+                    <input type="radio" name="answer" id="c"><img src="Resources/c.png">
+                    <input type="radio" name="answer" id="d"><img src="Resources/d.png"> -->
+
+                    <br>
+                    <input type="checkbox" id="reviewCbk">
+                    <label for="reviewCbk">Mark to Review this Question Later</label>
+                </div>
+                
+            </div>
+
+            <!-- 30min Timer -->
+            <div id="partThree">
+                <div id="timer">
+                    <p id="timeRem">Time Remaining</p>
+                    <!-- <p id="time">30:00</p> -->
+                    <p id="time">00:00</p>
+                    <hr><hr>
+                </div>
+
+                <!-- All 20 Questions Button -->
+                <div id="questionNo">
+                    <h3 id="head3">Questions</h3>
+                    <table id="qTable">
+                        <tr>
+                            <td><input class="qBtns" id="btn1" type="button" value="1"></td>
+                            <td><input class="qBtns" id="btn2" type="button" value="2"></td>
+                            <td><input class="qBtns" id="btn3" type="button" value="3"></td>
+                            <td><input class="qBtns" id="btn4" type="button" value="4"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="qBtns" id="btn5" type="button" value="5"></td>
+                            <td><input class="qBtns" id="btn6" type="button" value="6"></td>
+                            <td><input class="qBtns" id="btn7" type="button" value="7"></td>
+                            <td><input class="qBtns" id="btn8" type="button" value="8"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="qBtns" id="btn9" type="button" value="9"></td>
+                            <td><input class="qBtns" id="btn10" type="button" value="10"></td>
+                            <td><input class="qBtns" id="btn11" type="button" value="11"></td>
+                            <td><input class="qBtns" id="btn12" type="button" value="12"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="qBtns" id="btn13" type="button" value="13"></td>
+                            <td><input class="qBtns" id="btn14" type="button" value="14"></td>
+                            <td><input class="qBtns" id="btn15" type="button" value="15"></td>
+                            <td><input class="qBtns" id="btn16" type="button" value="16"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="qBtns" id="btn17" type="button" value="17"></td>
+                            <td><input class="qBtns" id="btn18" type="button" value="18"></td>
+                            <td><input class="qBtns" id="btn19" type="button" value="19"></td>
+                            <td><input class="qBtns" id="btn20" type="button" value="20"></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <!-- <hr><hr> -->
+
+                <!-- Navigation Buttons -->
+                <div id="navBtns">
+                    <input type="button" value="Save & Next" class="navBtn" id="next">
+                    <input type="button" value="Save" class="navBtn" id="save">
+                    <input type="button" value="Previous" class="navBtn" id="back">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Message -->
+    <footer>
+        <div id="warning">
+            <marquee behavior="" direction="">Note: Every action is been recorded, so be careful while performing any action.</marquee>
+        </div>
+    </footer>
+
+    <!-- javaScript -->
+    <script src="../../environment/config.js"></script>
+    <script type="module" src="../controller/exam.js"></script>
+</body>
+</html>

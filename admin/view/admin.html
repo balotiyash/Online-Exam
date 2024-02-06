@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VES Polytechnic - Admin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Resources/VES-logo.png" />
+    <link rel="stylesheet" href="../style/admin.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <div id="navBarDiv">
+            <img src="../../asset/images/VESP Logo1.png" alt="VES Polytechnic" id="vespLogo">
+            <p><span class="auto-type"></span></p>
+            <div id="userDiv">
+                <!-- <p id="welcome">Welcome, YASH LAXMAN BALOTIYA</p> -->
+                <input type="button" value="Logout" id="logoutBtn" onclick="openHomePage()">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Complete Page -->
+        <section id="homePage">
+            <!-- Left Panel -->
+            <div id="navPanel">
+                <div class="divider" id="topDivider"></div>
+                <div id="studsDetails">
+                    <p id="studentDetails">Student Details</p>
+                </div>
+                <div class="divider"></div>
+
+                <div id="studList" class="allSem">
+                    <p>Student List</p>
+                    <input type="button" class="allBtns" value="First Year" id="fy" onclick="">
+                    <input type="button" class="allBtns" value="Second Year" id="sy" oncanplay="">
+                    <input type="button" class="allBtns" value="Third Year" id="ty" onclick="displayBranches()">
+                </div>
+
+                <div class="allSem">
+                    <p>Student List Upload</p>
+                    <input type="button" class="allBtns" value="First Year" id="fy">
+                    <input type="button" class="allBtns" value="Second Year" id="sy">
+                    <input type="button" class="allBtns" value="Third Year" id="ty">
+                </div>
+
+                <div class="divider" id="topDivider"></div>
+                <div id="marksDiv">
+                    <p id="marks">Exam Result</p>
+                </div>
+                <div class="divider"></div>
+
+                <div class="allSem">
+                    <p>Student Marksheets</p>
+                    <input type="button" class="allBtns" value="First Year" id="fy">
+                    <input type="button" class="allBtns" value="Second Year" id="sy">
+                    <input type="button" class="allBtns" value="Third Year" id="ty">
+                </div>
+
+                <div class="divider" id="topDivider"></div>
+                <div id="uploadDiv">
+                    <p id="uploadQuest">Upload Questions</p>
+                </div>
+                <div class="divider"></div>
+                
+                <div id="commonDiv" class="allSem">
+                    <p>Common Subjects</p>
+                    <input type="button" class="allBtns" value="Management" id="mgtBtn">
+                    <input type="button" class="allBtns" value="Environmental Studies" id="estBtn">
+                </div>
+
+                <div id="first" class="allSem">
+                    <p>First Semester</p>
+                    <input type="button" class="allBtns" value="Basic Science" id="bscBtn">
+                </div>
+
+                <div id="second" class="allSem">
+                    <p>Second Semester</p>
+                    <input type="button" class="allBtns" value="Applied Science" id="aseBtn">
+                </div>
+
+                <div id="third" class="allSem">
+                    <p>Third Semester</p>
+                    <input type="button" class="allBtns" value="Mechanical Engineering Materials" id="memBtn">
+                </div>
+
+                <div id="fifth" class="allSem">
+                    <p>Fifth Semester</p>
+                    <input type="button" class="allBtns" value="Advanced Java Programming" id="ajpBtn" onclick="openSubjectDetails('ajp')">
+                </div>
+
+                <div id="sixth" class="allSem">
+                    <p>Sixth Semester</p>
+                    <input type="button" class="allBtns" value="Emerging Trends in Electronics" id="eteBtn">
+                    <input type="button" class="allBtns" value="Emerging Trends in Electrical Engineering">
+                    <input type="button" class="allBtns" value="Emerging Trends in Civil Engineering">
+                    <input type="button" class="allBtns" value="Emerging Trends in Computer and IT">
+                    <input type="button" class="allBtns" value="Emerging Trends in Mechanical Engineering" id="etmBtn">
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div id="studDetails">
+                <p id="noActTxt">No Action Selected!!</p>   
+                <div id="branch">
+                    <input type="button" value="AO" class="branchBtn" id="aoBtn">
+                    <input type="button" value="CE" class="branchBtn" id="">
+                    <input type="button" value="CO" class="branchBtn" id="coBtn" onclick="displayStudentDetails()">
+                    <input type="button" value="EE" class="branchBtn" id="">
+                    <input type="button" value="EJ" class="branchBtn" id="">
+                    <input type="button" value="ME" class="branchBtn" id="meBtn">
+                </div>
+
+                <div id="studDetailsDiv">
+                    
+                </div>
+                <!--<caption><p id="studCap">TY Student Details</p></caption>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="studRoll">Roll No.</th>
+                            <th id="studEnroll">Enrollment No.</th>
+                            <th id="studName">Student Name</th>
+                            <th id="studStatus">Status</th>
+                            <th id="studReset">Reset Exam</th>
+                        </tr>
+                    </thead>
+
+                    <thead>
+                        <tr>
+                            <td id="rollNo">CO5IA - 01</td>
+                            <td id="enrollNo">2100040153</td>
+                            <td id="name">RIJHWANI KHUSHI HARESH</td>
+                            <td>
+                                <select name="" id="statusBox">
+                                    <option value="allow">Allowed</option>
+                                    <option value="block">Blocked</option>
+                                </select>
+                            </td>
+                            <td><input type="button" value="Reset Exam" id="resetBtn"></td>
+                        </tr>
+                    </thead>
+                </table>-->
+            </div>
+        </section>
+
+        <section>
+            
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../controller/admin.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["VES Polytechnic", "Automation and Robotics", "Civil Engineering", "Computer Engineering", "Electrical Engineering", "Electronics & Tele-Comm Eng.", "Mechanical Engineering"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+</html>
